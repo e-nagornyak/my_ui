@@ -1,0 +1,51 @@
+.textBox {
+  position: relative;
+}
+
+.textBox :is(label, span) {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  color: #888888;
+  transition: 0.3s;
+}
+
+.textBox > label {
+  left: 10px;
+  translate: 0 -50%;
+  padding: 4px 8px;
+}
+
+.textBox > span {
+  right: 16px;
+  font-size: 28px;
+}
+
+.textBox > input {
+  height: 56px;
+  width: 260px;
+  padding-left: 16px;
+  border: 2px solid #888888;
+  border-radius: 8px;
+  outline: none;
+  background: transparent;
+  color: #000000;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.textBox > :is(input:focus, .has_value) {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.textBox > :is(input:focus, .has_value) ~ span {
+  color: #000000;
+}
+
+.textBox > :is(input:focus, .has_value) ~ label,
+.textBox > .has_value ~ label {
+  background: #151515;
+  color: rgba(255, 255, 255, 0.75);
+  translate: 0 -46px;
+}
