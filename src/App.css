@@ -1,0 +1,28 @@
+.app {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+
+    padding-top: 30px;
+}
+
+.app a {
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.app a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+
