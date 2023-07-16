@@ -3,6 +3,7 @@ import './App.css';
 import {TextInput} from "./text-input/text-input";
 import {Password} from "./password";
 import {MenuButtonInteraction} from "./menu-button-interaction";
+import DayToggle from "./Night && Day Toggle/DayToggle";
 
 enum PATH {
   HOME = '/',
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className={'app'}>
+      <DayToggle/>
       <div className="nav">
         <a href="/">Home</a>
         <a href="/menu-button-interaction">menu-button-interaction</a>

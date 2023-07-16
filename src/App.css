@@ -9,6 +9,12 @@
     padding-top: 30px;
 }
 
+.day__toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
 .app a {
     margin-right: 10px;
     font-size: 20px;
